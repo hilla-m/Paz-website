@@ -1,8 +1,42 @@
+
 body{
     direction: rtl;
     text-align: right;
+    font-family: arial;
+    width: 900px;
+    margin: 0 auto;
+}
+/*----------header---------*/
+header{
+    margin: 0 auto;
+    /* border: solid; */
 }
 
+header:: after{
+    Content:"";
+    Clear: both;
+    Display: table;
+}
+
+.top-header{
+    float: left;
+}
+
+/*----------nav---------*/
+nav > ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;  
+    padding: 0;
+    /* border: solid; */
+}
+
+nav > ul > li{
+    padding: 20px;
+}
+
+
+/*----------main---------*/
 .row{
     display: flex;
 }
