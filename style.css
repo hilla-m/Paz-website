@@ -3,16 +3,18 @@ body{
     direction: rtl;
     text-align: right;
     font-family: arial;
-    width: 900px;
+    width: 900px; /*****trouble maker****/
     margin: 0 auto;
 }
 /*----------header---------*/
 header{
     margin: 0 auto;
+    background-color: grey; /*****not like original****/
+    padding-top: 20px;
     /* border: solid; */
 }
 
-header:: after{
+header::after{
     Content:"";
     Clear: both;
     Display: table;
@@ -22,7 +24,23 @@ header:: after{
     float: left;
 }
 
+.top-header > a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.top-header > a:hover{
+    text-decoration: underline;
+    color: blue; /*****not like original****/
+}
+
 /*----------nav---------*/
+nav{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
 nav > ul{
     display: flex;
     justify-content: center;
@@ -32,9 +50,48 @@ nav > ul{
 }
 
 nav > ul > li{
-    padding: 20px;
+    font-size: 15px;
+    padding:0 20px;
+    font-weight: bold;
 }
 
+.dropdown {
+    position: relative;
+  }
+  
+.dropdown-content {
+    position: absolute; 
+    /* left: 100%; */ 
+    width: fit-content; /*****not worknig****/
+    display: none;
+    background-color: grey;
+    
+}
+
+.dropdown:hover > .dropdown-content {
+    display: block;
+    padding-top: 10px;
+}
+
+nav > ul > li > a , .dropdown-content > a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    width: fit-content;
+}
+
+.dropdown-content > a{
+    padding: 5px; /*****not like original****/
+}
+
+nav > ul > li > a:hover, .dropdown-content > a:hover {
+    color: blue; /*****not like original****/
+    text-decoration: underline;
+}
+  
+.dropdown-content > a:hover {
+background-color: lightgrey; /*****not working****/
+}
 
 /*----------main---------*/
 .row{
