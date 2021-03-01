@@ -1,0 +1,12 @@
+body{
+    direction: rtl;
+    text-align: right;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    flex: 1;
+}
