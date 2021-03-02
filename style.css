@@ -309,16 +309,12 @@ footer > ul > li {
 .row-contact{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    padding: 20px;
-    /* border: solid; */
+    /* padding: 20px; */
 }
 
 .col-contact{
     padding: 20px;
-    /* border: solid; */
 }
-
 
 .col-contact:nth-child(1){
     width: 110px;
@@ -328,13 +324,19 @@ footer > ul > li {
 }
 
 .col-contact:nth-child(2){
-    /* width: 347px; */
-    width: max-content;
+    width: 440px;
+    /* width: max-content; */
 }
 
 .col-contact:nth-child(3){
-    /* width: 248px; */
-    width: max-content;
+    width: 292px;
+    /* width: max-content; */
+}
+
+.col-contact:first-child > a{
+    color: #5c5c5c;
+    font-size: 13px;
+    text-decoration: none;
 }
 
 .main-contact > .row-contact > .col-contact:nth-child(2) > p , .main-contact > .row-contact > .col-contact:nth-child(2) > a{
@@ -357,6 +359,7 @@ footer > ul > li {
     font-weight: bold;
     color: #005CA0;
     margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .main-contact h4 , .main-contact p , .main-contact label{  /***not working on , .form-contact > label***/
@@ -365,7 +368,7 @@ footer > ul > li {
     margin: 0;
 }
 
-.main-contact > .row-contact > .col-contact:nth-child(2) > a:hover , .inner-row-contact > a:hover{
+.main-contact > .row-contact > .col-contact:nth-child(2) > a:hover , .inner-row-contact > a:hover , .col-contact:first-child > a:hover{
     color: #005CA0;
     text-decoration: underline;
 }
@@ -415,4 +418,24 @@ footer > ul > li {
     width: 160px;
     padding: 3px;
     border: 1px solid #808992;
+}
+
+.form-contact > .form-row:last-child{
+    background-color: blue;
+    position: relative;
+}
+
+.form-contact > .form-row > button{
+    position: absolute;
+    left: 0;
+    border-radius: 0 5px 0 0;
+    border: none;
+    color: white;
+    font-size: 14px;
+    background-image: linear-gradient( rgb(15, 167, 233), rgb(2,79 ,134) ); 
+}
+
+.form-contact > .form-row > button:hover{
+    color: rgb(44, 44, 44);
+    background-image: linear-gradient( rgb(252, 227, 31), rgb(245,149 ,10) ); 
 }
