@@ -1,9 +1,7 @@
-
 body{
     direction: rtl;
     text-align: right;
     font-family: arial;
-    /*width: 900px;*/  /*****trouble maker****/
     margin: 0 auto;
 }
 /*----------header---------*/
@@ -11,7 +9,6 @@ header{
     margin: 0 auto;
     background-image: linear-gradient( rgb(144, 144, 144) 85%, rgb(190,190 ,190) ); 
     padding-top: 20px;
-    /* border: solid; */
 }
 
 header::after{
@@ -25,8 +22,6 @@ header::after{
     margin: 0 auto;
     width: 900px;
     text-align: left;
-    /* float: left; */
-    /* border: solid; */
 }
 
 .top-header > a{
@@ -43,7 +38,7 @@ header::after{
 
 .top-header > a:hover{
     text-decoration: underline;
-    color: rgb(0,92,160); 
+    color: #005CA0; 
 }
 
 .top-header > a > img{
@@ -99,7 +94,7 @@ nav > ul > li{
     top: 100%; 
     width: fit-content; 
     display: none;
-    background-image: linear-gradient(  rgb(190,190 ,190) 10% , rgb(144, 144, 144)); ****not like original***
+    background-image: linear-gradient(  rgb(190,190 ,190) 10% , rgb(144, 144, 144)); /****not like original***/
     
 }
 
@@ -125,7 +120,7 @@ nav > ul > li > a , .dropdown-content > a , footer > ul > li > a{
 }
 
 nav > ul > li > a:hover, .dropdown-content > a:hover , footer > ul > li > a:hover , #hesder-pazomat:hover {
-    color: rgb(0,92,160); 
+    color: #005CA0; 
     text-decoration: underline;
 }
   
@@ -147,21 +142,75 @@ main{
 
 }
 
-.col{  /*****need to add main >?****/
-    border: solid;
-    margin: 10px;
+.col{  /*****need to add main > ??****/
+    margin: 6px;
 }
 
 main > div:first-child > .col{
-    position: relative;
+    position: relative; 
     height: 355px; 
-    border-radius: 0 0 30px 0;
+    border-radius: 0 0 25px 0;
+    overflow: hidden;
+}
+
+main > div:first-child > .col > .img{
+    position: absolute;
 }
 
 main > div:last-child > .col{
-    width: 293px;
+    /* display: flex;
+    flex-direction: column; */
+    background-image: url(images/cube_bg.png);
+    background-repeat: no-repeat;
+    background-color: rgb(237,237,237) ;
+    background-size: 293px 160px;
+    width: 273px;
     height: 216px; 
-    border-radius: 0 30px 0 0;
+    border-radius: 0 20px 0 0;
+    padding: 0px 0px 10px 20px;
+}
+
+
+main > div:last-child > .col> img{
+    display:block;
+    margin-right: auto;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+main > div:last-child h4{
+    font-size: 14px;
+    font-weight: bold;
+    color: #575757;
+    margin: 10px 25px 0px 10px;
+}
+
+main > div:last-child > .col > a::after{
+    Content:"";
+    Clear: both;
+    Display: table;
+}
+
+
+main > div:last-child a {
+    float: left; 
+    font-size: 13px;
+    color: #72716d;
+}
+
+main > div:last-child > .col > a > img{
+    margin: 0 4px;      
+}
+
+#stations{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    list-style: none;   
+}
+
+#stations li > a > img {
+    margin: 0 4px;
 }
 
 .inner-div{
@@ -197,19 +246,18 @@ main > div:last-child > .col{
 }
 
 
-.inner-div > a{
-    /* display: inline-block; */
+.inner-div > a {
     font-size: 13px;
     color: white;
     float: left;
 }
 
 .inner-div > a:hover{
-    color: rgb(0,92,160);  /*****change img on hover****/
+    color: #005CA0;  /*****change img on hover not working****/
 }
 
 .inner-div > a > img{
- margin: 0 4px;      
+    margin: 0 4px;      
 }
 
 /*----------footer--------*/
