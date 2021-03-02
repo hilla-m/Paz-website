@@ -252,7 +252,7 @@ main > div:last-child > .col > a > img{
     float: left;
 }
 
-.inner-div > a:hover{
+.inner-div > a:hover , main > div:last-child > .col > a:hover , #stations > li > a:hover{
     color: #005CA0;  /*****change img on hover not working****/
 }
 
