@@ -76,7 +76,6 @@ nav > ul , footer > ul{
     justify-content: center;/*****not worknig on footer****/
     list-style: none;  
     padding: 0;
-    /* border: solid; */
 }
 
 nav > ul > li{
@@ -312,12 +311,12 @@ footer > ul > li {
     justify-content: center;
     /* align-items: center; */
     padding: 20px;
-    border: solid;
+    /* border: solid; */
 }
 
 .col-contact{
     padding: 20px;
-    border: solid;
+    /* border: solid; */
 }
 
 
@@ -329,17 +328,20 @@ footer > ul > li {
 }
 
 .col-contact:nth-child(2){
-    width: 347px;
+    /* width: 347px; */
+    width: max-content;
 }
 
 .col-contact:nth-child(3){
-    width: 248px;
+    /* width: 248px; */
+    width: max-content;
 }
 
 .main-contact > .row-contact > .col-contact:nth-child(2) > p , .main-contact > .row-contact > .col-contact:nth-child(2) > a{
     display: inline-block;
     color: #5c5c5c;
     font-size: 12px;
+    text-decoration: none;
 }
 
 .main-contact h2{
@@ -347,19 +349,48 @@ footer > ul > li {
     font-weight: bold;
     border-bottom: 1px solid #cbcbcb;
     color: #72716d;
+    padding-bottom: 5px;
 } 
 
 .main-contact h3{
     font-size: 15px;
     font-weight: bold;
     color: #005CA0;
+    margin-bottom: 10px;
 }
 
-/* .main-contact > .row-contact > .col-contact:nth-child(2) > h3{
-    border-bottom: 1px solid #cbcbcb;
-    color: #72716d;
-} */
+.main-contact h4 , .main-contact p{
+    font-size: 13px;
+    color: #6d6d6d;
+    margin: 0;
+}
 
-.main-contact > .row-contact > .col-contact:nth-child(2) > a:hover{
+.main-contact > .row-contact > .col-contact:nth-child(2) > a:hover , .inner-row-contact > a:hover{
     color: #005CA0;
+    text-decoration: underline;
+}
+
+.inner-row-contact{
+    background-image: url(images/cube_bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 248px;
+    height: 142px;
+    padding: 18px 22px 15px;
+    margin: 0;
+}
+
+.inner-row-contact > a{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.form-contact{
+    background-image: url(images/contact_form_bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 347px;
+    min-height: 332px;
+    padding: 12px 18px;
+    margin: 0;
 }
