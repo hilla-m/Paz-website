@@ -134,7 +134,7 @@ main{
     margin-top: 20px;
 }
 
-.row{ /*****need to add main >?****/
+.row{ /*****need to add main-index >?****/
     display: flex;
     justify-content:center;
     align-items: center;
@@ -142,22 +142,22 @@ main{
 
 }
 
-.col{  /*****need to add main > ??****/
+.col{  /*****need to add main-index > ??****/
     margin: 6px;
 }
 
-main > div:first-child > .col{
+.main-index > div:first-child > .col{
     position: relative; 
     height: 355px; 
     border-radius: 0 0 25px 0;
     overflow: hidden;
 }
 
-main > div:first-child > .col > .img{
+.main-index > div:first-child > .col > .img{
     position: absolute;
 }
 
-main > div:last-child > .col{
+.main-index > div:last-child > .col{
     /* display: flex;
     flex-direction: column; */
     background-image: url(images/cube_bg.png);
@@ -171,34 +171,34 @@ main > div:last-child > .col{
 }
 
 
-main > div:last-child > .col> img{
+.main-index > div:last-child > .col> img{
     display:block;
     margin-right: auto;
     margin-top: 12px;
     margin-bottom: 18px;
 }
 
-main > div:last-child h4{
+.main-index > div:last-child h4{
     font-size: 14px;
     font-weight: bold;
     color: #575757;
     margin: 10px 25px 0px 10px;
 }
 
-main > div:last-child > .col > a::after{
+.main-index > div:last-child > .col > a::after{
     Content:"";
     Clear: both;
     Display: table;
 }
 
 
-main > div:last-child a {
+.main-index > div:last-child a {
     float: left; 
     font-size: 13px;
     color: #72716d;
 }
 
-main > div:last-child > .col > a > img{
+.main-index > div:last-child > .col > a > img{
     margin: 0 4px;      
 }
 
@@ -221,7 +221,7 @@ main > div:last-child > .col > a > img{
     background-color:  rgb(117, 117, 117);
     opacity: 0.9;
     width: 228px;
-    height: 95px;
+    height: 95px; /*original77*/
     padding: 5px;
 }
 
@@ -250,6 +250,7 @@ main > div:last-child > .col > a > img{
     font-size: 13px;
     color: white;
     float: left;
+
 }
 
 .inner-div > a:hover , main > div:last-child > .col > a:hover , #stations > li > a:hover{
@@ -259,6 +260,17 @@ main > div:last-child > .col > a > img{
 .inner-div > a > img{
     margin: 0 4px;      
 }
+
+/* .more-white{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url("images/read_more_white.png") no-repeat;
+}
+
+.more-white:hover{
+    background: url("images/read_more_blue.png") no-repeat;
+} */
 
 /*----------footer--------*/
 footer{
@@ -280,4 +292,74 @@ footer > ul > li {
 
 #hesder-pazomat {
     color: red;
+}
+
+/*----------contact page--------*/
+.homepage-grey{
+    width: 20px;
+    height: 20px;
+    background: url("images/menu_home_grey.png") no-repeat;
+    display: inline-block;
+
+}
+
+.homepage-grey:hover{
+    background: url("images/menu_home_blue.png") no-repeat;
+}
+
+.row-contact{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 20px;
+    border: solid;
+}
+
+.col-contact{
+    padding: 20px;
+    border: solid;
+}
+
+
+.col-contact:nth-child(1){
+    width: 110px;
+    height: 36px;
+    font-size: 13px;
+    color: #5c5c5c;
+}
+
+.col-contact:nth-child(2){
+    width: 347px;
+}
+
+.col-contact:nth-child(3){
+    width: 248px;
+}
+
+.main-contact > .row-contact > .col-contact:nth-child(2) > p , .main-contact > .row-contact > .col-contact:nth-child(2) > a{
+    display: inline-block;
+    color: #5c5c5c;
+    font-size: 12px;
+}
+
+.main-contact h2{
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    color: #72716d;
+} 
+
+.main-contact h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: #005CA0;
+}
+
+/* .main-contact > .row-contact > .col-contact:nth-child(2) > h3{
+    border-bottom: 1px solid #cbcbcb;
+    color: #72716d;
+} */
+
+.main-contact > .row-contact > .col-contact:nth-child(2) > a:hover{
+    color: #005CA0;
 }
