@@ -313,7 +313,7 @@ footer > ul > li {
 }
 
 .col-contact{
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .col-contact:nth-child(1){
@@ -380,7 +380,11 @@ footer > ul > li {
     width: 248px;
     height: 142px;
     padding: 18px 22px 15px;
-    margin: 0;
+}
+
+.inner-row-contact:first-child{
+    margin-top: 55px;
+    margin-bottom: 20px;
 }
 
 .inner-row-contact > a{
