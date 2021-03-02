@@ -321,6 +321,9 @@ footer > ul > li {
     height: 36px;
     font-size: 13px;
     color: #5c5c5c;
+    background-image: linear-gradient(white,rgb(239,239,239),rgb(206,206,206)); 
+    border-top: 1px solid #cbcbcb;
+    margin-top: 5px;
 }
 
 .col-contact:nth-child(2){
@@ -337,6 +340,8 @@ footer > ul > li {
     color: #5c5c5c;
     font-size: 13px;
     text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .main-contact > .row-contact > .col-contact:nth-child(2) > p , .main-contact > .row-contact > .col-contact:nth-child(2) > a{
