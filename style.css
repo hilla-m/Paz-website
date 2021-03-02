@@ -135,12 +135,81 @@ nav > ul > li > a:hover, .dropdown-content > a:hover , footer > ul > li > a:hove
 }
 
 /*----------main---------*/
-.row{
-    display: flex;
+main{
+    margin-top: 20px;
 }
 
-.col{
-    flex: 1;
+.row{ /*****need to add main >?****/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* margin: 40px;  */
+
+}
+
+.col{  /*****need to add main >?****/
+    border: solid;
+    margin: 10px;
+}
+
+main > div:first-child > .col{
+    position: relative;
+    height: 355px; 
+    border-radius: 0 0 30px 0;
+}
+
+main > div:last-child > .col{
+    width: 293px;
+    height: 216px; 
+    border-radius: 0 30px 0 0;
+}
+
+.inner-div{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 0 0 30px 0;
+    background-color:  rgb(117, 117, 117);
+    opacity: 0.9;
+    width: 228px;
+    height: 95px;
+    padding: 5px;
+}
+
+.inner-div::after{
+    Content:"";
+    Clear: both;
+    Display: table;
+}
+    
+.inner-div > h4{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+
+.inner-div > p{
+    font-size: 13px;
+    color: white;
+    margin: 2px 0;
+}
+
+
+.inner-div > a{
+    /* display: inline-block; */
+    font-size: 13px;
+    color: white;
+    float: left;
+}
+
+.inner-div > a:hover{
+    color: rgb(0,92,160);  /*****change img on hover****/
+}
+
+.inner-div > a > img{
+ margin: 0 4px;      
 }
 
 /*----------footer--------*/
