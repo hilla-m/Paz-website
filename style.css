@@ -163,7 +163,7 @@ main{
 .main-index > div:last-child > .col> img{
     display:block;
     margin-right: auto;
-    margin-top: 12px;
+    margin-top: 25px;
     margin-bottom: 18px;
 }
 
@@ -342,6 +342,7 @@ footer > ul > li {
     background-image: linear-gradient(white,rgb(239,239,239),rgb(206,206,206)); 
     border-top: 1px solid #cbcbcb;
     margin-top: 5px;
+    margin-left: 10px;
 }
 
 .col-contact:nth-child(2){
@@ -375,6 +376,7 @@ footer > ul > li {
     border-bottom: 1px solid #cbcbcb;
     color: #72716d;
     padding-bottom: 5px;
+    padding-top: 10px;
 } 
 
 .main-contact h3{
