@@ -8,7 +8,7 @@ body{
 header{
     margin: 0 auto;
     background-image: linear-gradient( rgb(144, 144, 144) 85%, rgb(190,190 ,190) ); 
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 header::after{
@@ -25,10 +25,11 @@ header::after{
 }
 
 .top-header > a{
-    position: relative;
+    /* position: relative; */
     text-decoration: none;
     color: white;
     font-size: 12px;
+    font-weight: bold;
 }
 
 #lng{
@@ -40,6 +41,7 @@ header::after{
     text-decoration: underline;
     color: #005CA0; 
 }
+
 
 .top-header > a > img{
     display: inline-block;
@@ -62,25 +64,27 @@ header::after{
 .logo{
     position:absolute;
     top: 20px;
-    right: -100px;
+    right: -5px;
 }
 
 /*----------nav---------*/
 nav{
+    /* display: flex;
+    justify-content: center; */
     padding-top: 15px;
-    padding-bottom: 5px;
+    padding-right: 150px;
 }
 
 nav > ul , footer > ul{
     display: flex;
-    justify-content: center;/*****not worknig on footer****/
+    justify-content: center;
     list-style: none;  
     padding: 0;
 }
 
 nav > ul > li{
     font-size: 15px;
-    padding:0 10px;
+    padding:0 8px;
     font-weight: bold;
 }
 
@@ -88,13 +92,13 @@ nav > ul > li{
     position: relative;
   }
   
-.dropdown-content {
+.dropdown-content {   /****moved back in index , position not good enough****/
     position: absolute; 
     top: 100%; 
-    width: fit-content; 
+    z-index: 1;
     display: none;
     background-image: linear-gradient(  rgb(190,190 ,190) 10% , rgb(144, 144, 144)); /****not like original***/
-    
+    width: max-content;
 }
 
 .dropdown:hover > .dropdown-content {
@@ -102,18 +106,17 @@ nav > ul > li{
     padding-top: 10px;
 }
 
-nav > ul > li > a , .dropdown-content > a , footer > ul > li > a{
+nav > ul > li > a , .dropdown-content > a ,  footer > ul > li > a{  
     text-decoration: none;
     display: block;
     color: white;
-    width: fit-content;
+    /* width: fit-content;  */
 }
 
 .dropdown-content > a{
     display: block;
     padding: 4px 8px;
-    width: max-content;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #cbcbcb;
     /* border-image-repeat: repeat-x; */
 
 }
@@ -124,13 +127,12 @@ nav > ul > li > a:hover, .dropdown-content > a:hover , footer > ul > li > a:hove
 }
   
 .dropdown-content > a:hover {
-    background-color: rgb(188,188,188); /*****not working****/
-    background-size: 100%; /*****not working****/
+    background-color: rgb(196, 196, 196);
 }
 
 /*----------main---------*/
 main{
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .row{ /*****need to add main-index >?****/
@@ -138,7 +140,6 @@ main{
     justify-content:center;
     align-items: center;
     /* margin: 40px;  */
-
 }
 
 .col{  /*****need to add main-index > ??****/
@@ -152,13 +153,11 @@ main{
     overflow: hidden;
 }
 
-.main-index > div:first-child > .col > .img{
+/* .main-index > div:first-child > .col > .img{
     position: absolute;
-}
+} */
 
 .main-index > div:last-child > .col{
-    /* display: flex;
-    flex-direction: column; */
     background-image: url(images/cube_bg.png);
     background-repeat: no-repeat;
     background-color: rgb(237,237,237) ;
@@ -209,7 +208,7 @@ main{
 #stations{
     display: flex;
     flex-direction: column; 
-    justify-content: right; /*****not working****/
+    /* justify-content: right;  -- not working*/
     list-style: none; 
     width: 50px;
     padding:0 ;
@@ -246,7 +245,7 @@ main{
     background-color:  rgb(117, 117, 117);
     opacity: 0.9;
     width: 228px;
-    height: 95px; /*original77*/
+    height: 95px; 
     padding: 5px;
 }
 
@@ -286,16 +285,17 @@ main{
     margin: 0 4px;      
 }
 
-/* .more-white{
+.read-more{
+    background: url("images/read_more_white.png") no-repeat;
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: url("images/read_more_white.png") no-repeat;
+    border: solid;
 }
 
-.more-white:hover{
+.card:hover:hover{
     background: url("images/read_more_blue.png") no-repeat;
-} */
+} 
 
 /*----------footer--------*/
 footer{
@@ -339,7 +339,7 @@ footer > ul > li {
 }
 
 .col-contact{
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .col-contact:nth-child(1){
