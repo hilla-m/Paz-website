@@ -18,14 +18,18 @@ header::after{
 }
 
 .top-header{
-    position: relative;
     margin: 0 auto;
     width: 900px;
     text-align: left;
 }
 
+.bottom-header{
+    margin: 0 auto;
+    width: 900px;
+    padding-top: 15px;
+}
+
 .top-header > a{
-    /* position: relative; */
     text-decoration: none;
     color: white;
     font-size: 12px;
@@ -48,9 +52,6 @@ header::after{
     float: left;
     width: 19px;
     height: 19px;
-    /* position: absolute;
-    left: 0;
-    bottom: 0; */
 }
 
 .top-header > input{
@@ -63,41 +64,40 @@ header::after{
 
 .logo{
     position:absolute;
-    top: 20px;
-    right: -5px;
+    top: 30px;
 }
 
 /*----------nav---------*/
 nav{
-    /* display: flex;
-    justify-content: center; */
-    padding-top: 15px;
-    padding-right: 150px;
+    display: flex;
+    justify-content: left; 
 }
 
-nav > ul , footer > ul{
+nav > ul{
     display: flex;
-    justify-content: center;
     list-style: none;  
     padding: 0;
+    margin-right: auto;
 }
+
 
 nav > ul > li{
     font-size: 15px;
-    padding:0 8px;
+    padding:0 8px;  
     font-weight: bold;
+    width: max-content;
 }
 
 .dropdown {
     position: relative;
   }
   
-.dropdown-content {   /****moved back in index , position not good enough****/
+.dropdown-content {  
     position: absolute; 
     top: 100%; 
     z-index: 1;
     display: none;
-    background-image: linear-gradient(  rgb(190,190 ,190) 10% , rgb(144, 144, 144)); /****not like original***/
+    background-image: linear-gradient(  rgb(190,190 ,190) , rgb(144, 144, 144) 10%); 
     width: max-content;
 }
 
@@ -110,15 +110,12 @@ nav > ul > li > a , .dropdown-content > a ,  footer > ul > li > a{
     text-decoration: none;
     display: block;
     color: white;
-    /* width: fit-content;  */
 }
 
 .dropdown-content > a{
     display: block;
     padding: 4px 8px;
     border-bottom: 1px solid #cbcbcb;
-    /* border-image-repeat: repeat-x; */
-
 }
 
 nav > ul > li > a:hover, .dropdown-content > a:hover , footer > ul > li > a:hover , #hesder-pazomat:hover {
@@ -135,14 +132,13 @@ main{
     margin-top: 25px;
 }
 
-.row{ /*****need to add main-index >?****/
+.row{ 
     display: flex;
     justify-content:center;
     align-items: center;
-    /* margin: 40px;  */
 }
 
-.col{  /*****need to add main-index > ??****/
+.col{  
     margin: 6px;
 }
 
@@ -152,10 +148,6 @@ main{
     border-radius: 0 0 25px 0;
     overflow: hidden;
 }
-
-/* .main-index > div:first-child > .col > .img{
-    position: absolute;
-} */
 
 .main-index > div:last-child > .col{
     background-image: url(images/cube_bg.png);
@@ -167,7 +159,6 @@ main{
     border-radius: 0 20px 0 0;
     padding: 0px 0px 10px 20px;
 }
-
 
 .main-index > div:last-child > .col> img{
     display:block;
@@ -189,7 +180,6 @@ main{
     Display: table;
 }
 
-
 .main-index > div:last-child a {
     float: left; 
     font-size: 13px;
@@ -200,17 +190,15 @@ main{
     margin: 0 4px;      
 }
 
-/* .row2{
+.row-stations{
     display: flex;
-    justify-content: space-evenly;
-} */
+    justify-content: space-between;
+}
 
 #stations{
     display: flex;
     flex-direction: column; 
-    /* justify-content: right;  -- not working*/
     list-style: none; 
-    width: 50px;
     padding:0 ;
     margin: 0;
 }
@@ -228,13 +216,11 @@ main{
 }
 
 #col-stations{
-    margin: 5px 10px 100px 30px;
+    margin: 25px 25px 0 0;
 } 
 
-#col-map{  /*****better way?****/
-   margin-top: 20px;  
-   margin-right: 80px; 
-   margin-left: 0; 
+#col-map{  
+   margin-top: 15px;  
 }
 
 .inner-div{
@@ -278,7 +264,7 @@ main{
 }
 
 .inner-div > a:hover , main > div:last-child > .col > a:hover , #stations > li > a:hover{
-    color: #005CA0;  /*****change img on hover not working****/
+    color: #005CA0;  
 }
 
 .inner-div > a > img{
@@ -309,6 +295,13 @@ footer{
     background-image: linear-gradient(rgb(185,185,185) ,rgb(133,133,133) 85%); 
 }
 
+footer > ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;  
+    padding: 0;
+}
+
 footer > ul > li {
     color: white;
     margin: 5px;
@@ -335,7 +328,6 @@ footer > ul > li {
 .row-contact{
     display: flex;
     justify-content: center;
-    /* padding: 20px; */
 }
 
 .col-contact{
@@ -393,7 +385,7 @@ footer > ul > li {
     margin-top: 0;
 }
 
-.main-contact h4 , .main-contact p , .main-contact label{  /***not working on , .form-contact > label***/
+.main-contact h4 , .main-contact p , .main-contact label{  
     font-size: 13px;
     color: #6d6d6d;
     margin: 0;
